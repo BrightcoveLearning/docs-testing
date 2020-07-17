@@ -1,0 +1,45 @@
+---
+layout: null
+---
+
+/* css specific to the site */
+
+.bcls-active {
+  border-left: 3px {{ site.product_color }} solid;
+}
+
+
+h1 i.fal, h1 i.fab, h1 i.fas, h1 i.far {
+  font-size: 3rem;
+  color:{{ site.product_color }};
+  margin-right: 1rem;
+}
+
+h4 i.fal,
+h4 i.fab,
+h4 i.fas,
+h4 i.far {
+  font-size: inherit;
+
+  color: {{ site.product_color }};
+}
+
+
+.card-icon i {
+  color: {{site.product_color}};
+}
+
+.bcls-card-small ul {
+  list-style: none;
+  margin-left: -2.9em;
+  font-size: small;
+}
+
+.bcls-card-small h5 {
+  font-size: 1rem;
+}
+
+.bcls-card-small h4 {
+  font-size: 1.1rem;
+  margin-left: -1.5em;
+}

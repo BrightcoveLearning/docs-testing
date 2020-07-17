@@ -1,0 +1,17 @@
+---
+title: Search
+parent: Home
+---
+
+<p id="search_block"><input id="search_box" type="text" style="width: 30rem;" placeholder="Search {{ site.product}} Documentation"> <i id="search_icon" class="fal fa-search"></i></p>
+
+<script>
+  var search_box = document.getElementById('search_box'),
+  search_icon = document.getElementById('search_icon'),
+  search_block = document.getElementById('search_block');
+
+  search_icon.addEventListener('click', function() {
+    var search_string = encodeURI(search_box.value);
+    window.location.href = '/search.html?q=' + search_string;
+  })
+</script>

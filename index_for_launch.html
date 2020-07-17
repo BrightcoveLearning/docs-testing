@@ -1,0 +1,24 @@
+---
+title: Brightcove Beacon Home
+---
+<article class="landing-page-wrapper">
+  <h1>{{ site.product }} Home</h1>
+  <section class="landing-page-header" id="landing_page_header">
+    <p>{{ site.description }}</p>
+  </section>
+  <br>
+  <section class="landing-page-body-wrapper" id="landing_page_wrapper">
+    {% for item in site.data.navigation %}
+      {% if item.docs != nil %}
+      <section class="landing-page-section">
+        <h6 class="landing-page-item-header">{{ item.section }}</h6>
+        <ul class="landing-page-item list-none">
+          {% for entry in item.docs %}
+            <li><a href="{{ entry.url }}">{{ entry.name }}</a></li>
+          {% endfor %}
+            </ul>
+      </section>
+      {% endif %}
+    {% endfor %}
+  </section>
+</article>

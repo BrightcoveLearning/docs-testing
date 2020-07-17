@@ -1,0 +1,11 @@
+---
+layout: null
+search: exclude
+---
+[{% for page in site.html_pages %}
+  {
+      "newURL": "{{ site.site_url }}{{page.url}}",
+      "oldURL": "/{{page.name | replace: ".html", ""}}"
+  },
+{% endfor %}]
+

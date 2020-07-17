@@ -1,0 +1,48 @@
+- Home:
+  name: Documentation Home
+  url: 'https://support.brightcove.com' 
+- Audience:
+  name: Brightcove Audience
+  url: 'https://audience.support.brightcove.com' 
+- Beacon:
+  name: Brightcove Beacon
+  url: 'https://beacon.support.brightcove.com' 
+- Campaign:
+  name: Brightcove Campaign
+  url: 'https://campaign.support.brightcove.com' 
+- Campaign:
+  name: Brightcove Engage
+  url: 'https://engage.support.brightcove.com' 
+- Live:
+  name: Brightcove Live
+  url: 'https://live.support.brightcove.com' 
+- Gallery:
+  name: Brightcove Gallery
+  url: 'https://gallery.support.brightcove.com' 
+- SSAI:
+  name: Brightcove SSAI
+  url: 'https://ssai.support.brightcove.com' 
+- Social:
+  name: Brightcove Social
+  url: 'https://social.support.brightcove.com' 
+- Studio:
+  name: Video Cloud Studio
+  url: 'https://studio.support.brightcove.com' 
+- Player:
+  name: Brightcove Player Development
+  url: 'https://player.support.brightcove.com' 
+- APIs:
+  name: Video Cloud Platform APIs
+  url: 'https://apis.support.brightcove.com' 
+- SDKs:
+  name: Video Cloud Device SDKs
+  url: 'https://sdks.support.brightcove.com' 
+- Integration:
+  name: Integration / CMS Connectors
+  url: 'https://integrations.support.brightcove.com' 
+- General:
+  name: Video Cloud General
+  url: 'https://general.support.brightcove.com' 
+- Zencoder:
+  name: Zencoder
+  url: 'https://zencoder.support.brightcove.com' 

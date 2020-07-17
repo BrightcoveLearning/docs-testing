@@ -1,0 +1,22 @@
+current directory: /Users/rcrooks/GitHub/jekyll-template/vendor/bundle/ruby/2.7.0/gems/posix-spawn-0.3.15/ext
+/Users/rcrooks/.rvm/rubies/ruby-2.7.0/bin/ruby -I /Users/rcrooks/.rvm/rubies/ruby-2.7.0/lib/ruby/2.7.0 -r ./siteconf20200716-10338-1sxzsw5.rb extconf.rb
+creating Makefile
+
+current directory: /Users/rcrooks/GitHub/jekyll-template/vendor/bundle/ruby/2.7.0/gems/posix-spawn-0.3.15/ext
+make "DESTDIR=" clean
+
+current directory: /Users/rcrooks/GitHub/jekyll-template/vendor/bundle/ruby/2.7.0/gems/posix-spawn-0.3.15/ext
+make "DESTDIR="
+compiling posix-spawn.c
+posix-spawn.c:226:27: warning: incompatible pointer types passing 'int (VALUE, VALUE, posix_spawn_file_actions_t *)' (aka 'int (unsigned long, unsigned long, void **)') to parameter of type 'int (*)(VALUE, VALUE, VALUE)' (aka 'int (*)(unsigned long, unsigned long, unsigned long)') [-Wincompatible-pointer-types]
+        rb_hash_foreach(options, posixspawn_file_actions_operations_iter, (VALUE)fops);
+                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/rcrooks/.rvm/rubies/ruby-2.7.0/include/ruby-2.7.0/ruby/intern.h:558:35: note: passing argument to parameter here
+void rb_hash_foreach(VALUE, int (*)(VALUE, VALUE, VALUE), VALUE);
+                                  ^
+1 warning generated.
+linking shared-object posix_spawn_ext.bundle
+
+current directory: /Users/rcrooks/GitHub/jekyll-template/vendor/bundle/ruby/2.7.0/gems/posix-spawn-0.3.15/ext
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 posix_spawn_ext.bundle ./.gem.20200716-10338-1wr4vhu

@@ -1,0 +1,70 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Brightcove **** Documentation
+email: training@brightcove.com
+description: >- # this means to ignore newlines until "baseurl:"
+  ****
+# baseurl: "" # the subpath of your site, e.g. /blog
+site_url: "https://****.support.brightcove.com"
+site_domain: "****.support.brightcove.com"
+
+# Build settings
+# theme: minima
+
+# local server (for "jekyll serve") will be localhost:{PORT number below}
+port: 2222
+
+# everything below may be different per site
+product: ****
+color: rgb(51, 51, 51)
+product_color: rgb(186, 206, 19)
+product_icon: "****.svg"
+search_id: "017969773216783359937:3dokhftl9vz"
+feedbackify_id: "15077"
+bing_custom_config_id: "b602408f-fef7-4452-ac74-4e12852bdd46"
+talla_appID: "00c26be3-4421-41e6-bb00-1dee68740f67"
+talla_token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1ODI4MDQzNDF9.RYf2x65FXvdDURzM h00i76KfUrYlsDLsw6mVuEv6zmE'
+talla_knowledgegroup: '069b0074-5861-47fd-a63a-c60c7926de70'
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+# plugins
+plugins:
+  - jekyll-last-modified-at
+
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

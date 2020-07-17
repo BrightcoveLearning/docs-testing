@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav">
+          {% for item in site.data.navigation %}
+            {% if item.docs == nil %}
+            <h5><a href="{{ item.url: }}">{{ item.name }}</a></h5>
+            {% else %}
+              <h5 class="submenu-header"><a href="{{ item.url: }}">{{ item.name }} <strong>+</strong></a></h5>            
+              <ul class="sidenav-submenu" style="display:none;">
+                {% for entry in item.docs %}
+                  {% if entry.docs == nil %}
+                    <li><a href="{{ entry.url: }}">{{ entry.name }}</a></li>
+                  {% else %}
+                    <li class="submenu-header">
+                      <a href="{{ entry.url: }}">{{ entry.name }} <strong>+</strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        {% for doc in entry.docs %}
+                        <li><a href="{{ doc.url: }}">{{ doc.name }}</a></li>
+                        {% endfor %}
+                      </ul>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+          {% endfor %}
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->

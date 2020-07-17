@@ -1,0 +1,43 @@
+---
+layout: null
+search: exclude
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="https://learning-services-media.brightcove.com/doc-assets/site-assets/css/site/sitemap.css"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    {% for section in site.data.navigation %}
+      <url>
+        <loc>{{ site.site_url }}{{ section.url }}</loc>
+        <lastmod>{{site.time | date: '%Y-%m-%d' }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+      </url>
+      {% for doc in section.docs %}
+        <url>
+          {% if doc.url contains "https:" %}
+            <loc>{{ doc.url }}</loc>
+          {% else %}
+            <loc>{{ site.site_url }}{{ doc.url }}</loc>
+          {% endif %}
+            <lastmod>{{site.time | date: '%Y-%m-%d' }}</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+        </url>
+        {% for subdoc in doc.docs %}
+          <url>
+            {% if subdoc.url contains "https:" %}
+              <loc>{{ subdoc.url }}</loc>
+            {% else %}
+              <loc>{{ site.site_url }}{{ subdoc.url }}</loc>
+            {% endif %}
+            <lastmod>{{site.time | date: '%Y-%m-%d' }}</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+        {% endfor %}
+      {% endfor %}
+    {% endfor %}
+
+</urlset>
