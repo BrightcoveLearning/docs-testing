@@ -38,10 +38,10 @@
   name: Video Cloud Device SDKs
   url: 'https://sdks.support.brightcove.com' 
 - Integration:
-  name: Integration / CMS Connectors
+  name: Integrations and CMS Connectors
   url: 'https://integrations.support.brightcove.com' 
 - General:
-  name: Video Cloud General
+  name: Video Cloud General Information
   url: 'https://general.support.brightcove.com' 
 - Zencoder:
   name: Zencoder
